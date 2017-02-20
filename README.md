@@ -1,2 +1,5 @@
 # DynamicArray
-Implements a Dynamic Array data-structure 
+A dynamic array is an array that can be resized after it is created. Java’s ArrayList is a dynamic array.  Each ArrayList instance has a capacity. The capacity is the length of the array used to store the elements in the list. It is always at least as large as the list size. As elements are added to an ArrayList, and the ArrayList fills up, its capacity grows automatically.  When the capacity of an ArrayList with n elements grows, the new capacity is 1.5n. This means that the amount of wasted space in an ArrayList is O(n).  
+An application can call method trimToSize to decrease the length of the array used to store the elements in the list.  Method trimToSize trims the capacity of the ArrayList instance to be the list's current size. Thus, trimToSize can be used to minimize the storage of an ArrayList instance.
+The capacity of a DynamicArray automatically grows and shrinks as elements are added and removed from the array. Also, the amount of wasted space in a DynamicArray is only O(√n).
+
